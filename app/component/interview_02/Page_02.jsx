@@ -1,6 +1,6 @@
-const page = () => {
+export default function Page_02() {
   return (
-    <div className="flex flex-col lg:flex-row min-h-screen">
+    <section className="flex flex-col lg:flex-row">
       {/* Image */}
       <div className="w-full lg:w-1/2 h-64 lg:h-auto">
         <img
@@ -10,30 +10,22 @@ const page = () => {
       </div>
 
       {/* Content */}
-      <div className="w-full lg:w-1/2 bg-gray-400 flex items-center justify-center px-6 py-10">
-        <div className="max-w-xl text-center lg:text-left">
-          <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold mb-4">
-            My Portfolio
-          </h1>
+      <div className="w-full lg:w-1/2 flex items-center justify-center p-10 bg-gray-900 text-white">
+        <div className="max-w-lg text-center lg:text-left">
+          <h2 className="text-3xl sm:text-5xl font-bold mb-4">My Portfolio</h2>
 
-          <p className="text-sm sm:text-base lg:text-lg leading-relaxed">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
-            corrupti cum nulla atque voluptate vero numquam iste dolores.
+          <p className="text-gray-400">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            corrupti cum nulla atque voluptate vero.
           </p>
 
-          <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <button className="rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-500">
+          <div className="mt-6">
+            <button className="bg-indigo-600 hover:bg-indigo-500 px-6 py-3 rounded-md">
               Inspiration
-            </button>
-
-            <button className="rounded-md bg-slate-600 px-4 py-2 text-sm font-semibold text-white hover:bg-slate-500">
-              Non Inspiration
             </button>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default page;
+}
