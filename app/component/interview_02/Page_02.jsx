@@ -10,7 +10,7 @@ export default function Page_02() {
       </div>
 
       {/* Content */}
-      <div className="w-full lg:w-1/2 flex items-center justify-center p-10 bg-gray-900 text-white">
+      <div className="w-full lg:w-1/2 flex items-center justify-center p-10 bg-gray-600 text-white">
         <div className="max-w-lg text-center lg:text-left">
           <h2 className="text-3xl sm:text-5xl font-bold mb-4">My Portfolio</h2>
 
