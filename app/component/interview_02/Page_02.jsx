@@ -1,34 +1,32 @@
 const page = () => {
   return (
-    <div className="flex h-screen">
-      <div className="w-1/2">
+    <div className="flex flex-col lg:flex-row min-h-screen">
+      {/* Image */}
+      <div className="w-full lg:w-1/2 h-64 lg:h-auto">
         <img
           src="/image/outdoor-tennis-court-facility-in-the-evening.jpg"
           className="w-full h-full object-cover"
         />
       </div>
-      <div className="w-3/5 bg-gray-400 flex items-center justify-center">
-        <div className="max-w-md">
-          <h1 className="text-7xl font-bold mb-4">My Portfolio</h1>
-          <p>
+
+      {/* Content */}
+      <div className="w-full lg:w-1/2 bg-gray-400 flex items-center justify-center px-6 py-10">
+        <div className="max-w-xl text-center lg:text-left">
+          <h1 className="text-3xl sm:text-5xl lg:text-7xl font-bold mb-4">
+            My Portfolio
+          </h1>
+
+          <p className="text-sm sm:text-base lg:text-lg leading-relaxed">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem
-            corrupti cum nulla atque voluptate vero numquam iste dolores, neque
-            expedita eaque, incidunt quas temporibus voluptates rem dolore
-            dolorem rerum? Similique deserunt doloremque animi natus corrupti
-            quod dolores, temporibus cum porro impedit vero mollitia ut placeat
-            itaque. Accusamus, quam deserunt? Nostrum aut modi vitae suscipit
-            fuga itaque distinctio pariatur dolore? Sequi atque in maiores sint
-            iure repudiandae doloribus nulla culpa, recusandae, explicabo fuga
-            tempore labore aspernatur? Inventore, iusto tempora! Est quia magni
-            facilis architecto, molestiae expedita maiores a quisquam voluptates
-            sint soluta fugit. Accusantium magni sint laudantium maiores iste
-            quidem odio?
+            corrupti cum nulla atque voluptate vero numquam iste dolores.
           </p>
-          <div className="py-4 flex gap-4">
-            <button className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-indigo-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-              Inspriration
+
+          <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+            <button className="rounded-md bg-indigo-600 px-4 py-2 text-sm font-semibold text-white hover:bg-indigo-500">
+              Inspiration
             </button>
-            <button className="rounded-md bg-slate-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-slate-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-slate-600">
+
+            <button className="rounded-md bg-slate-600 px-4 py-2 text-sm font-semibold text-white hover:bg-slate-500">
               Non Inspiration
             </button>
           </div>
@@ -37,4 +35,5 @@ const page = () => {
     </div>
   );
 };
+
 export default page;
